@@ -24,7 +24,7 @@ const createMemory = async (memory) => {
     const response = await fetch(`${API_URL}/memories`, {
         method: "POST", // Define o método HTTP como POST
         headers: {
-            "Content-Type": "application/json" // Define o cabeçalho da requisição como JSON
+            "Content-Type": "application/json" // Define o cabeçalho da requisição como JSON.
         },
         body: JSON.stringify(memory) // Converte o objeto da memória para JSON e envia no corpo da requisição
     });
